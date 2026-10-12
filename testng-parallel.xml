@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="Suite" parallel="classes" thread-count="4">
+
+    <test name="Test">
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+
+            <class name="ecom.SwagLabs.Login.LoginScript"/>
+            <class name="ecom.SwagLabs.Product.ProductScript"/>
+            <class name="ecom.SwagLabs.Cart.CartScript"/>
+            <class name="ecom.SwagLabs.Checkout.CheckoutScript"/>
+        </classes>
+    </test>
+
+</suite>
