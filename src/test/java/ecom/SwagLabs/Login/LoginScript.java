@@ -54,8 +54,7 @@ public class LoginScript extends Baseclass {
 	    log.Enterlogin();
 	    wUtil.takingScreenshot(driver, "VerifyLoginScriptNegative");
 
-	    Assert.assertFalse(driver.getCurrentUrl().contains("inventory.html"),
-	            "Login should fail for invalid credentials");
+	    Assert.assertFalse(driver.getCurrentUrl().contains("inventory.html"),"Login should fail for invalid credentials");
 
 	    System.out.println("Login Unsuccessful as expected");
 	}
@@ -71,8 +70,7 @@ public class LoginScript extends Baseclass {
 	    log.Enterlogin();
 	    wUtil.takingScreenshot(driver, "VerifyLoginScriptNegative1");
 
-	    Assert.assertFalse(driver.getCurrentUrl().contains("inventory.html"),
-	            "Login should fail for invalid credentials");
+	    Assert.assertFalse(driver.getCurrentUrl().contains("inventory.html"),"Login should fail for invalid credentials");
 
 	    System.out.println("Login Unsuccessful as expected");
 	}
